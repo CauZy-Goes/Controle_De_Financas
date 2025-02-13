@@ -6,6 +6,8 @@ class Bancos(Enum):
     NUBANK = 'Nubank'
     SANTANDER = 'Santander' 
     INTER = 'Inter'
+    BRADESCO = 'Bradesco'
+ 
 
 class Status(Enum):
     ATIVO = 'Ativo'
@@ -32,7 +34,7 @@ class Historico(SQLModel, table=True):
 
 
 
-sqlite_file_name = 'database.db'
+sqlite_file_name = 'database1.db'
 sqlite_url = f"sqlite:///{sqlite_file_name}"
 
 engine = create_engine(sqlite_url, echo=False)

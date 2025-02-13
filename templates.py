@@ -3,6 +3,7 @@ from view import *
 
 class UI:
     def start(self):
+        print("Bem vindo ao seu controle de finanças pessoal !")
         while True:
             print('''
             [1] -> Criar conta
