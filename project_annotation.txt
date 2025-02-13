@@ -1,3 +1,4 @@
 1 - Dependencies
     
     pip install sqlmodel
+    pip install matplotlib
