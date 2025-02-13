@@ -36,7 +36,7 @@ def desativar_conta(id):
 
 # desativar_conta(1)
 
-def tranferir_saldo(id_conta_saida, id_conta_entrada, valor):
+def transferir_saldo(id_conta_saida, id_conta_entrada, valor):
     with Session(engine) as session:
         statement = select(Conta).where(Conta.id==id_conta_saida)
         conta_saida = session.exec(statement).first()
@@ -117,6 +117,5 @@ def criar_grafico_por_conta() :
         plt.bar(bancos, total)
         plt.show()
 
-criar_grafico_por_conta()
 
 
